@@ -1,0 +1,21 @@
+Q.What is MongoDb
+==> web-development ==> Database
+    MongoDb==>2009
+
+
+
+Q.What is difference between SQL and NoSQL(MongoDb)
+==>
+   # SQL=>
+   -RDBMS is a relational Database management system and work on relational Database
+   -Can create Database
+   -It stores data in form of entity as tables
+   -It user SQL to query Database
+   # NoSQL(MongoDb)=>
+   -It's a non-relational,document-oriented Database management systemand work on document-based Database
+   -Can create Database
+   -MongoDb stores data in the form of documents
+   -MongoDb uses BSON to query Database
+
+FrontEnd==> HTML/CSS
+BackEnd==> PHP,NodeJs,python

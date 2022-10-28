@@ -1,0 +1,43 @@
+Q.What is JSON
+==>
+    -The format of communication we saw is called JSON
+    -JSON stands for JavaScript Object Notation
+    - JSON is a way of communicating data or interchanging data with two or more computers with specific rules(it is similar to some other formate such as XML )
+    -Using Key Value pairs
+    -The syntax is taken form JavaScript but JSON is portable with other language
+    -JSON is a lightweight data-interchanging format 
+    -It is easy for Humans to read and write.
+    -It is based on a subset o the JavaScript Programming Language Standard ECMA-262 3rd Edition-December 1999
+
+
+    #JSON is built on 2 structures
+    *Object=> A collection of name-Value pairs
+       -An object is an unordered set of name/values pairs
+       -An object begines with left curly braces{ an ends with right curly braces }
+       -Each name is followed by colon: and the name/values pairs are seperated by comma,
+    *Array=>  An ordered list of values
+              - An array begines with letf square bracket[ and ends with right square bracket]
+              -Values seperated by comm.
+
+
+              {
+                Language
+                [
+                    {
+                        "name":"Java",
+                        "version":9.0
+                    },
+                    {
+                        "name":"Python".
+                        "version":3.0
+                    }
+                ]
+              }
+
+        #JSON syntax
+        -Data is in name/Value pairs
+        -Data is seperated by commas
+        -curly braces hold object
+        -square bracket hold array
+
+        For an example refer index.JSON

@@ -1,0 +1,4 @@
+Q.What is BSON?
+==> 
+-It stands for binary JSON
+-BSON is also object Notation but its binary and JSON is also object Notation but its textual

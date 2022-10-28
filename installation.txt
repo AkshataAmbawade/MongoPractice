@@ -1,0 +1,12 @@
+-Go to google and search MongoDb.com
+-click on software 
+-then community server
+-Download
+
+-Go to Downloads in performance
+-Right click then install
+-Keep doing next next
+-copy data directory and lord directory copy that
+Finish
+
+--check for MongoDb folder...click on server present in it

@@ -1,6 +1,15 @@
 Q.What is MongoDb
-==> web-development ==> Database
+==> MongoDb is basically Database management Programm
+
+
+web-development ==> Database
     MongoDb==>2009
+
+    Table(MySQL)==>inMongo==>collection
+    Row(MySQL)  ==>inMongo==>document
+    Column(MySQL)==>inMongo==>Fields
+    MongoDb provieds an flexibility
+
 
 
 
@@ -19,3 +28,13 @@ Q.What is difference between SQL and NoSQL(MongoDb)
 
 FrontEnd==> HTML/CSS
 BackEnd==> PHP,NodeJs,python
+
+
+1.JSON is a text based format and text parsing is very slow
+2.JSON readable format is far from space efficient another Database concern
+3.JSON only supports a limited number of  basic data type
+
+In order to make MongoDb JSON first but still high-performance and general purpose . BSON was invented. It stores the data in binary formate
+
+MongoDb stores data in BSON format both internally and over the network
+BSON is just like a JSON only

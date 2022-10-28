@@ -1,0 +1,88 @@
+#Create Operations
+
+MongoDB provides the following methods to insert documents into a collection:
+
+db.collection.insertOne({object})//New in version 3.2
+
+db.collection.insertMany([{},{},{}])//New in version 3.2
+  
+
+#Read Operations
+
+MongoDB provides the following methods to read documents into a collection:
+
+db.collection.find(query,projection)
+query==>used to show entier object 
+projection==>used to show required field(Row)
+EG: db.friends({"name":"Mamta"})//you will get only objetc with name mamta
+
+if you want to show any key such as name then write name:1 it will show name key and value
+and if you write name:0 then it will not show name key and will display rest of all
+EG: db.friends.find({name:"Mamta},{name:1})//This will give name mamta with id
+
+
+If you want to remove the id also then write _id=0;
+
+If you have same key and value pair in  every object and if you tried to find that you will get all objects but if you want specific number of object with same key and value pair then use command
+db.friends.find({PhoneNumber:1234567890}).pretty().limit(give the number how many objects you want)
+
+we can use another way also
+db.friends.findOne({PhoneNumber:1234567890})//pretty()is not applicable
+
+you will get the first matching field in both the ways
+
+you can skip printing first object data by using this command
+
+db.friends.find({PhoneNumber:1234567890}).pretty().limit(1).skip(1)
+
+
+#Update operations
+
+MongoDB provides the following methods to update documents into a collection:
+
+db.collection.updateOne(<filter>,<update>)//New in version 3.2
+
+EG:db.friends.updateOne({name:"Swarupa"},{$set:{Location:"West"}})
+This $set Operator replace the value of a field with the specific value
+
+db.collection.updateMany(<filter>,<update>)//New in version 3.2
+
+EG: db.friends.updateMany({PhoneNumber:1234567890},{$set:{Location:"Badlapur}})
+
+db.collection.replaceOne(<filter>,<update>)//New in version 3.2
+
+#Delete operations
+
+MongoDB provides the following methods to Delete documents into a collection:
+
+db.collection.deleteOne(DELLETION_CRITERIA)//New in version 3.2
+
+db.collection.deleteMany(DELLETION_CRITERIA)New in version 3.2
+
+
+
+
+
+
+#  What's the difference between the two commands here?
+
+db.collection.deleteMany({condition})
+db.collection.remove({condition})
+
+They do the same. The difference is the values that return.
+
+With remove():
+
+> db.ticker.remove({"name": "Bitcoin"})
+WriteResult({ "nRemoved" : 2 })
+
+
+With deleteMany():
+
+> db.ticker.deleteMany({"name": "Bitcoin"})
+{ "acknowledged" : true, "deletedCount" : 2 }
+
+
+if you want to delete entier collection then use command
+db.friends.deleteMany({})
+

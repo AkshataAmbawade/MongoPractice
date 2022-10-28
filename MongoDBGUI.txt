@@ -1,0 +1,17 @@
+MongoDb GUI (Graphical User Interface)
+
+#Installation
+-Go to MongoDb website
+-click on software
+-click on compass
+-click on Try it now
+-Install the stable version
+
+
+
+
+In compass
+-Go to Add  then insert document(add whatever you want)
+-Go to Edit if you want to do some changes
+-Go to filter and add key and value pair in {} braces like{name:"Sheetal"}
+-If you want to delete document then directly click on delete

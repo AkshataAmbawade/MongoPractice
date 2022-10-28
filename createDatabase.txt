@@ -1,0 +1,39 @@
+#On Terminal write mongo
+
+#then check do we have already existing Database or not by using command show dbs
+
+#create an Database==> use use command then give name to the Database
+                     EG. use Akshata(you will get message "Switch to db Akshata) 
+
+#If you try to check the Database is created or not by using command show dbs you will not find the newly created Database because there should be atleast one collection then only it will show 
+
+# To create a collection use command db.(giveAnyNameYouWant)then give .and add/insert one document then add BSON data to it then enter . It will generate object Id automatically
+                                    EG: db.friends.insertOne({"name":"Mamta","Location":"Society","PhoneNumber":1234567890})
+
+#Now after creating a collection you can able to see the newly created Database in show dbs . If you want to check which one is active Database just use command db
+
+#Now if you want to check how many collection this Database has then use command show collections
+
+#If you want to check to many documents this collection has then use command db.(nameOfCollection).find()
+      EG:  show collections
+            friends==>after entering the enter button you will get an output
+            db.friends.find()===>to find how many documents it has
+            ({"_id":objectId("1355768787978098"),"name":"Mamta","Location":"Society","PhoneNumber":1234567890})==>after entering the enter button you will get an output
+
+#If you want your data to be display in organised manner then use command db.(collectionName).fin().pretty() the enter
+
+# If you want to exit then just press ctrl+c it will say bye  or else you can do show dbs the in that write quit()
+
+#If you want to delete the Database 
+mongo //to start the mongodb shell
+
+show dbs //to list existing databases
+
+use <dbname> //the <dbname> is the database you'd like to drop
+
+db //should show <dbname> just to be sure I'm working with the right database
+
+db.dropDatabase() //will delete the database & return { "dropped" : "<dbname>", "ok" : 1 }
+cls====>to clear the 
+
+

@@ -7,4 +7,4 @@ Q.What is BSON?
 2.JSON readable format is far from space efficient another Database concern
 3.JSON only supports a limited number of  basic data type
 
-In order to make MongoDb JSON first but still high-performance and general purpose . BSON was invented. It stores the data in binary formate
+In order to make MongoDb JSON first but still high-performance and general purpose . BSON was invented. It stores the data in binary format

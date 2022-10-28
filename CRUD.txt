@@ -19,7 +19,7 @@ EG: db.friends({"name":"Mamta"})//you will get only objetc with name mamta
 if you want to show any key such as name then write name:1 it will show name key and value
 and if you write name:0 then it will not show name key and will display rest of all
 EG: db.friends.find({name:"Mamta},{name:1})//This will give name mamta with id
-
+    db.friends.find({name:"Mamta},{_id:0,name:1})//This will give name without id
 
 If you want to remove the id also then write _id=0;
 

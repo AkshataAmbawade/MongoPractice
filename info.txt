@@ -10,7 +10,17 @@ web-development ==> Database
     Column(MySQL)==>inMongo==>Fields
     MongoDb provieds an flexibility
 
+    MongoDb is a production base database
+    MongoDb is a document database designed for ease of development and scaling
+    It is intuitive and easy to use NoSQL database
+    Available as community and enterprise edition
+    However the community edition itself is very powerful!
 
+    #Difference between Mongo and mongodb
+    Mongo--> is the command-line shell that connect to a specific instance of mongod(its basically a command line shell which is used to give commands)
+    Mongod-->is the Mongo Daemon id basically the host porcess for the database(its actual database . It basically take action on the commands given by the mongo)
+
+    MongoDb present on the cloud
 
 
 Q.What is difference between SQL and NoSQL(MongoDb)

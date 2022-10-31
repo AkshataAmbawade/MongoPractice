@@ -1,0 +1,13 @@
+#You can add documents in database collection from  _MONGOSH  terminal which is present downward
+
+On _MONGOSH terminal do the exact same thing which you were doing on terminal/command prompt.
+
+EG:
+db.friends.insertMany([
+    {name:"Prashant",Location:"Society",PhoneNumber:0987654321},
+    {name:"Rohan",Location:"Mansarover",PhoneNumber:0987654321},
+    {name:"Sumit",Location:"Citizen Apartment",PhoneNumber:0987654321},{name:"vineet",Location:"Citizen Apartment",PhoneNumber:0987654321}
+])
+
+
+#you can do it directly from ADD DATA also
